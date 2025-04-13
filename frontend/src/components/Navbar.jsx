@@ -1,7 +1,6 @@
 // Navbar.jsx
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "./ui/button";
 
 function Navbar({ activeSection, setActiveSection, mobileMenuOpen, setMobileMenuOpen, scrollToSection }) {
   return (
@@ -21,7 +20,7 @@ function Navbar({ activeSection, setActiveSection, mobileMenuOpen, setMobileMenu
             <button
               key={section}
               onClick={() => scrollToSection(section)}
-              className={`capitalize text-sm font-medium transition-all duration-300 bg-transparent shadow-none border-none hover:bg-transparent p-0 ${
+              className={`capitalize text-sm font-medium transition-all duration-300 bg-transparent border-none ${
                 activeSection === section 
                   ? "text-white relative after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:w-full after:h-[2px] after:bg-violet-500/70 after:transition-all after:duration-300" 
                   : "text-white/70 hover:text-white"
@@ -32,11 +31,9 @@ function Navbar({ activeSection, setActiveSection, mobileMenuOpen, setMobileMenu
           ))}
         </nav>
         
-        <Button 
-          className="hidden md:inline-flex bg-gradient-to-r from-violet-600 to-fuchsia-500 hover:opacity-90 transition-all duration-300 shadow-md shadow-purple-500/20 hover:shadow-lg hover:shadow-purple-500/30 border-none rounded-lg"
-        >
+        <button className="hidden md:block px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-violet-600 to-fuchsia-500 rounded-lg hover:opacity-90 transition-all duration-300 shadow-md shadow-purple-500/20 hover:shadow-lg hover:shadow-purple-500/30 btn">
           Sign In
-        </Button>
+        </button>
 
         <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -53,18 +50,16 @@ function Navbar({ activeSection, setActiveSection, mobileMenuOpen, setMobileMenu
                   scrollToSection(section);
                   setMobileMenuOpen(false);
                 }}
-                className={`capitalize text-sm font-medium transition-all duration-300 bg-transparent shadow-none border-none hover:bg-transparent p-0 ${
+                className={`capitalize text-sm font-medium transition-all duration-300 bg-transparent border-none ${
                   activeSection === section ? "text-white" : "text-white/70 hover:text-white"
                 }`}
               >
                 {section}
               </button>
             ))}
-            <Button 
-              className="w-full bg-gradient-to-r from-violet-600 to-fuchsia-500 hover:opacity-90 transition-all duration-300 shadow-md shadow-purple-500/20 hover:shadow-lg hover:shadow-purple-500/30 border-none rounded-lg"
-            >
+            <button className="w-full px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-violet-600 to-fuchsia-500 rounded-lg hover:opacity-90 transition-all duration-300 shadow-md shadow-purple-500/20 hover:shadow-lg hover:shadow-purple-500/30 btn">
               Sign In
-            </Button>
+            </button>
           </div>
         </div>
       )}

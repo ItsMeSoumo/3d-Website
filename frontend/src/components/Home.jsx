@@ -339,11 +339,11 @@ function Home({ activeSection, setActiveSection, scrollToSection }) {
       <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Creative{" "}
+            <span className="text-white">Creative</span>{" "}
             <span className="bg-gradient-to-r from-violet-500 to-fuchsia-400 bg-clip-text text-transparent">
               3D Designs
             </span>{" "}
-            for the Modern Web
+            <span className="text-white">for the Modern Web</span>
           </h1>
           <p className="text-lg text-white/80 mb-8 max-w-lg">
             Bringing your ideas to life with cutting-edge 3D technology and beautiful UI design principles.

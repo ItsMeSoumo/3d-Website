@@ -9,7 +9,7 @@ export default function Contact({ scrollToSection }) {
     <section id="contact" className="min-h-screen py-20 relative">
       <div className="container mx-auto px-4 py-20">
         <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">
-          Get In{" "}
+          <span className="text-white">Get In</span>{" "}
           <span className="bg-gradient-to-r from-violet-500 to-fuchsia-400 bg-clip-text text-transparent">
             Touch
           </span>

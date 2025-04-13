@@ -66,8 +66,9 @@ h1 {
   font-weight: 700;
 }
 
-/* Reset browser default styles */
-button {
+/* Reset browser default styles for basic buttons, applying only to buttons without explicit classes */
+button:not([class]), 
+button.nav-link {
   appearance: none;
   background-color: transparent;
   border: none;
@@ -79,6 +80,9 @@ button {
   padding: 0;
   text-align: inherit;
   text-transform: inherit;
+  margin: 0;
+  box-shadow: none;
+  outline: none;
 }
 
 /* Normal button styles - apply these to buttons that need them */

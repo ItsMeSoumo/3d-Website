@@ -86,7 +86,7 @@ export default function About({ scrollToSection }) {
       <section id="about" className="min-h-screen py-20 relative">        
         <div className="container mx-auto px-4 py-20">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">
-            About{" "}
+            <span className="text-white">About</span>{" "}
             <span className="bg-gradient-to-r from-violet-500 to-fuchsia-400 bg-clip-text text-transparent">
               Our Studio
             </span>

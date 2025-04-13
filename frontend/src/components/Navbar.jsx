@@ -17,17 +17,21 @@ function Navbar({ activeSection, setActiveSection, mobileMenuOpen, setMobileMenu
 
         <nav className="hidden md:flex space-x-8">
           {["home", "about", "contact"].map((section) => (
-            <button
+            <a
               key={section}
-              onClick={() => scrollToSection(section)}
-              className={`capitalize text-sm font-medium transition-all duration-300 bg-transparent border-none ${
+              href={`#${section}`}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(section);
+              }}
+              className={`capitalize text-sm font-medium transition-all duration-300 ${
                 activeSection === section 
                   ? "text-white relative after:content-[''] after:absolute after:bottom-[-6px] after:left-0 after:w-full after:h-[2px] after:bg-violet-500/70 after:transition-all after:duration-300" 
                   : "text-white/70 hover:text-white"
               }`}
             >
               {section}
-            </button>
+            </a>
           ))}
         </nav>
         
@@ -35,7 +39,7 @@ function Navbar({ activeSection, setActiveSection, mobileMenuOpen, setMobileMenu
           Sign In
         </button>
 
-        <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <button className="md:hidden text-white bg-transparent border-none shadow-none" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
@@ -44,18 +48,20 @@ function Navbar({ activeSection, setActiveSection, mobileMenuOpen, setMobileMenu
         <div className="md:hidden absolute top-full left-0 right-0 backdrop-blur-xl bg-[#0b0221]/60 border-b border-violet-500/30 shadow-lg shadow-violet-900/10 backdrop-saturate-150">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             {["home", "about", "contact"].map((section) => (
-              <button
+              <a
                 key={section}
-                onClick={() => {
+                href={`#${section}`}
+                onClick={(e) => {
+                  e.preventDefault();
                   scrollToSection(section);
                   setMobileMenuOpen(false);
                 }}
-                className={`capitalize text-sm font-medium transition-all duration-300 bg-transparent border-none ${
+                className={`capitalize text-sm font-medium transition-all duration-300 ${
                   activeSection === section ? "text-white" : "text-white/70 hover:text-white"
                 }`}
               >
                 {section}
-              </button>
+              </a>
             ))}
             <button className="w-full px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-violet-600 to-fuchsia-500 rounded-lg hover:opacity-90 transition-all duration-300 shadow-md shadow-purple-500/20 hover:shadow-lg hover:shadow-purple-500/30 btn">
               Sign In

@@ -18,7 +18,7 @@ function FloatingDecoration() {
       <div className="absolute top-[35%] left-[15%] w-6 h-6 rounded-full bg-gradient-to-br from-pink-500/40 to-rose-400/40 shadow-lg shadow-pink-500/20 blur-[1px] animate-float-slow-reverse"></div>
       
       {/* Bottom left sphere */}
-      <div className="absolute bottom-[20%] left-[10%] w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400/40 to-teal-300/40 shadow-lg shadow-emerald-500/20 blur-[1px] animate-float-medium"></div>
+      <div className="absolute bottom-[20%] left-[10%] w-10 h-10 rounded-full bg-gradient-to-br from-indigo-400/40 to-purple-300/40 shadow-lg shadow-indigo-500/20 blur-[1px] animate-float-medium"></div>
       
       {/* Bottom right large sphere */}
       <div className="absolute bottom-[25%] right-[5%] w-16 h-16 rounded-full bg-gradient-to-br from-indigo-500/30 to-purple-400/30 shadow-lg shadow-indigo-500/20 blur-[1px] animate-float-slow"></div>
@@ -26,7 +26,7 @@ function FloatingDecoration() {
       {/* Small spheres scattered around */}
       <div className="absolute top-[60%] right-[25%] w-4 h-4 rounded-full bg-gradient-to-br from-white/30 to-gray-300/30 shadow-lg shadow-white/10 blur-[1px] animate-pulse"></div>
       <div className="absolute top-[75%] left-[30%] w-5 h-5 rounded-full bg-gradient-to-br from-violet-400/20 to-fuchsia-300/20 shadow-lg shadow-violet-500/10 blur-[1px] animate-float-medium-reverse"></div>
-      <div className="absolute top-[45%] right-[15%] w-3 h-3 rounded-full bg-gradient-to-br from-amber-400/40 to-yellow-300/40 shadow-lg shadow-amber-500/20 blur-[1px] animate-float-fast"></div>
+      <div className="absolute top-[45%] right-[15%] w-3 h-3 rounded-full bg-gradient-to-br from-violet-400/40 to-fuchsia-300/40 shadow-lg shadow-violet-500/20 blur-[1px] animate-float-fast"></div>
       
       {/* Tiny accent dots */}
       <div className="absolute top-[25%] left-[40%] w-2 h-2 rounded-full bg-white/40 blur-[1px] animate-pulse"></div>

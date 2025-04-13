@@ -351,14 +351,14 @@ function Home({ activeSection, setActiveSection, scrollToSection }) {
           <div className="flex flex-wrap gap-4">
             <Button
               onClick={() => scrollToSection("contact")}
-              className="bg-gradient-to-r from-violet-600 to-fuchsia-500 hover:opacity-90 transition-opacity border-none"
+              className="bg-gradient-to-r from-violet-600 to-fuchsia-500 hover:opacity-90 transition-opacity border-none btn"
             >
               Get Started
             </Button>
             <Button
               variant="outline"
               onClick={() => scrollToSection("about")}
-              className="border-violet-500/30 hover:bg-violet-500/10 text-white"
+              className="border-violet-500/30 hover:bg-violet-500/10 text-white btn"
             >
               Learn More
             </Button>

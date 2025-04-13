@@ -302,3 +302,25 @@ button.nav-link {
     background-color: #f9f9f9;
   }
 }
+
+/* Add better default paragraph styling for improved readability */
+p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+/* Set default heading colors to full white for better visibility */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+/* Adjust form element text for better visibility */
+input, textarea, select, button, label {
+  color: white;
+}
+
+/* Add styling for input placeholders */
+::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}

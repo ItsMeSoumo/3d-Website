@@ -92,7 +92,7 @@ export default function About({ scrollToSection }) {
             </span>
           </h2>
           
-          <p className="text-center text-white/70 max-w-2xl mx-auto mb-16">
+          <p className="text-center text-white/90 max-w-2xl mx-auto mb-16">
             We specialize in creating stunning 3D web experiences using cutting-edge technology 
             and innovative design principles to bring your digital vision to life.
           </p>
@@ -127,8 +127,8 @@ export default function About({ scrollToSection }) {
                   {item.icon}
                 </div>
                 
-                <h3 className="text-xl font-semibold mb-3 relative z-10 group-hover:text-white transition-colors duration-300">{item.title}</h3>
-                <p className="text-white/60 relative z-10 group-hover:text-white/90 transition-colors duration-300">{item.description}</p>
+                <h3 className="text-xl font-semibold mb-3 relative z-10 text-violet-100 group-hover:text-white transition-colors duration-300">{item.title}</h3>
+                <p className="text-white/90 relative z-10 group-hover:text-white transition-colors duration-300">{item.description}</p>
               </div>
             ))}
           </div>
